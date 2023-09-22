@@ -1,9 +1,9 @@
 import React from 'react'
 import ilustrationWorking from '../../assets/illustration-working.svg'
 
-const Main = () => {
+const Presentation = () => {
   return (
-    <section className=' flex'>
+    <section className=' flex mb-[140px]'>
         
     <div className='mt-[70px] text-start w-[570px] '>
         <h1 className='mb-1 '>  
@@ -25,4 +25,4 @@ const Main = () => {
   )
 }
 
-export default Main
+export default Presentation

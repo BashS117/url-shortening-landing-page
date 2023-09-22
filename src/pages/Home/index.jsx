@@ -1,16 +1,16 @@
 import React from 'react'
-import ilustrationWorking from '../../assets/illustration-working.svg'
-import Main from '../../components/Main'
+import Shorten from '../../components/Shorten'
+import Presentation from '../../components/Presentation'
 
 const Home = () => {
   return (<>
   
-  <div className='App  text-center w-full '>
-   
-  <Main/>
+  <main className='App  text-center w-full '>
+    <Presentation/>
+    <Shorten/>
 
 
-  </div>
+  </main>
   </>
   )
 }
