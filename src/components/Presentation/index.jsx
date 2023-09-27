@@ -1,9 +1,10 @@
 import React from 'react'
 import ilustrationWorking from '../../assets/illustration-working.svg'
 
+
 const Presentation = () => {
   return (
-    <section className=' flex mb-[140px]'>
+    <section className=' flex mb-[220px] px-[166px]'>
         
     <div className='mt-[70px] text-start w-[570px] '>
         <h1 className='mb-1 '>  

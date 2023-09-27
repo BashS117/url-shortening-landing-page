@@ -1,15 +1,13 @@
 import React from 'react'
-import Shorten from '../../components/Shorten'
 import Presentation from '../../components/Presentation'
+import Statistics from '../../components/Statistics'
 
 const Home = () => {
   return (<>
   
   <main className='App  text-center w-full '>
     <Presentation/>
-    <Shorten/>
-
-
+    <Statistics/>
   </main>
   </>
   )
