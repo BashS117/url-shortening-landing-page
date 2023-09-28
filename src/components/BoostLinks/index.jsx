@@ -9,8 +9,8 @@ const BoostLinks = () => {
 
     <div className='z-10 w-[100%] flex flex-col items-center'>
 
-<h1 className='mb-[40px] text-[2.5rem] text-[var(--Off-white)] px-[100px]'>Boost your links today</h1>
-      <button className='rounded-[8px] w-[20%] px-[35px] bg-[var(--Cyan)] font-bold text-[var(--Off-white)]'>Get Started</button>
+<h1 className='mb-[40px] text-[2.3rem] text-[var(--Off-white)] px-[100px]'>Boost your links today</h1>
+      <button className='rounded-[25px]  px-[45px] bg-[var(--Cyan)] font-bold text-[var(--Off-white)]'>Get Started</button>
 
     </div>        
 </div>
