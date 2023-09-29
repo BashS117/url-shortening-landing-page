@@ -3,11 +3,37 @@ import Shorten from '../../components/Shorten'
 import IconBrandRecognition from '../../assets/icon-brand-recognition.svg'
 import IconDetailedRecords from '../../assets/icon-detailed-records.svg'
 import IconFullyCustomizable from '../../assets/icon-fully-customizable.svg'
+import { ShortenContext } from '../../context';
+import { useContext } from 'react'
+
 const Statistics = () => {
+
+    const {shortenedLinks }=useContext(ShortenContext);
+
+
+
+
   return (
 
-<section className='bg-[#ebebeb] px-[166px] pb-[130px] '>
+<section className='bg-[#ebebeb] px-[166px] pb-[130px]  '>
     <Shorten/>
+
+    {shortenedLinks.map((link, index) => (
+          <div key={index} className=" flex justify-between items-center mb-[10px] relative top-[-55px] bg-[var(--Off-white)] rounded-[4px] px-[20px] py-[11px]  text-[1.3rem]">
+           {link.originalLink} 
+            <div className=''>
+             <a className='mr-[20px] text-[var(--Cyan)]'
+             href={link.shortenedLink} 
+             target="_blank" 
+             rel="noopener noreferrer">
+               {link.shortenedLink} </a>
+              <button 
+              className='rounded-[8px]  px-[35px] bg-[var(--Cyan)] font-bold text-[var(--Off-white)]'>Copy</button>
+
+
+              </div>
+          </div>
+        ))}
     
         <h1 className=" mt-[40px] mb-[5px] text-center text-2xl font-bold py-4 text-[2.5rem]">
         Advanced Statistics

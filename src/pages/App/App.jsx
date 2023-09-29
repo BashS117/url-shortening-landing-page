@@ -2,7 +2,7 @@ import { useRoutes, BrowserRouter } from "react-router-dom"
 import Home from "../Home"
 import Header from "../../components/Header"
 import './App.css'
-
+import { ShortenProvider } from "../../context"
 
 const AppRoutes=()=>{
   let routes=useRoutes([
@@ -24,13 +24,15 @@ const App=()=> {
 
   return (
   
-
-      <BrowserRouter>
+<ShortenProvider>
+<BrowserRouter>
         <Header />
 
         <AppRoutes />
 
       </BrowserRouter>
+</ShortenProvider>
+  
     
 
   )
