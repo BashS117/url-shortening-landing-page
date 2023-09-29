@@ -10,7 +10,7 @@ const Presentation = () => {
         <h1 className='mb-1 '>  
             More than just shorter links
         </h1>
-        <p className='mb-10 w-[530px] text-[22px]'> Build your brand’s recognition and get detailed insights 
+        <p className='mb-10 w-[530px] text-[22px] text-[var(--Grayish-Violet)]'> Build your brand’s recognition and get detailed insights 
             on how your links are performing.
         </p>
         <button className='rounded-[22px] px-[25px] bg-[var(--Cyan)] font-bold text-[var(--Off-white)]'>Get Started</button>

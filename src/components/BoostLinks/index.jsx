@@ -4,7 +4,7 @@ import bgBoostDesktop from '../../assets/bg-boost-desktop.svg'
 const BoostLinks = () => {
   return ( 
   
-  <div className='h-[16rem] items-center relative overflow-hidden rounded-[8px] bg-[var(--Dark-Violet)]  flex flex-center justify-center'>
+  <div className='h-[16rem] items-center relative overflow-hidden  bg-[var(--Dark-Violet)]  flex flex-center justify-center'>
    <img src={bgBoostDesktop} alt="" className='absolute top-0 left-0 w-full h-full'/>
 
     <div className='z-10 w-[100%] flex flex-col items-center'>
