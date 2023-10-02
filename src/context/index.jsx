@@ -9,7 +9,10 @@ export const ShortenProvider=({children}) =>{
 
     
 const handleShortenedLinkChange = (originalLink,shortenedLink) => {
-    setShortenedLinks([...shortenedLinks,{originalLink,shortenedLink}]);
+    setShortenedLinks([
+      ...shortenedLinks,
+      {originalLink,shortenedLink,}
+    ]);
   };
 
   
@@ -23,8 +26,10 @@ const handleLinkChange = (event)=>{
     shortenedLinks,handleShortenedLinkChange,
     linkToShorten,handleLinkChange,
 
-    setIsInputEmpty,isInputEmpty
+    setIsInputEmpty,isInputEmpty,
 
+
+setShortenedLinks
     }}>
     {children}
 

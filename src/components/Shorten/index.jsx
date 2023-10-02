@@ -30,7 +30,7 @@ const handleShortenClick=()=>{
 }
 
   return (
-    <div className='p-[50px] py-[60px] overflow-hidden rounded-[8px] bg-[var(--Dark-Violet)] relative top-[-80px] flex flex-center justify-center'>
+    <div className='z-10 p-[50px] py-[60px] overflow-hidden rounded-[8px] bg-[var(--Dark-Violet)] relative top-[-80px] flex flex-center justify-center'>
             <img src={bgFormImage} alt="" className='absolute top-0 left-0 w-full h-full'/>
 
             <div className='z-10 w-[100%] flex justify-around '>
@@ -39,17 +39,20 @@ const handleShortenClick=()=>{
        
               <input 
               id="linkToShorten"
-              className={`rounded-[8px] pl-8 w-[75%] py-[16px] ${isInputEmpty ? 'placeholder-red-500' : ''}`} 
+              className={`rounded-[8px] pl-8 w-[75%] py-[16px] ${isInputEmpty ? 'placeholder-red-500 border-2 border-red-400' : ''}`} 
               type="text" 
               placeholder='Shorten a link here...' 
               value={linkToShorten}
               onChange={handleLinkChange}
               />
      
-              <button 
+     <div className='bg-[var(--Off-white)] rounded-[8px]'>
+     <button 
                onClick={handleShortenClick}
-              className='rounded-[8px] w-[20%] px-[35px] bg-[var(--Cyan)] font-bold text-[var(--Off-white)]'>Shorten it!</button>
+              className='button-container rounded-[8px] h-[100%] px-[35px] bg-[var(--Cyan)] font-bold text-[var(--Off-white)]'>Shorten It!</button>
 
+     </div>
+            
             </div>        
             
     </div>

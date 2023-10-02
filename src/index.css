@@ -40,6 +40,10 @@ body {
 a{
   color: var(--Grayish-Violet);
 }
+a:hover{
+  cursor: pointer;
+}
+
 
 h1 {
   font-size: 4.2em;
@@ -65,12 +69,19 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  opacity: 50%;
 }
-button:focus,
+.footer p:hover{
+  color: var(--Cyan);
+  cursor: pointer;
+
+}
+
+
+/* 
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
+} */
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -78,7 +89,14 @@ button:focus-visible {
     background-color: #ffffff;
   }
   a:hover {
-    color: #747bff;
+    color: var(--Very-Dark-Blue);
+  }
+  
+  .icons a{
+    color: var(--Off-white);
+  }
+  .icons a:hover {
+    color: var(--Cyan);
   }
   button {
     background-color: #f9f9f9;

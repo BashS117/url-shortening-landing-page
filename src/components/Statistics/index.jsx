@@ -8,7 +8,10 @@ import { useContext } from 'react'
 
 const Statistics = () => {
 
-    const {shortenedLinks }=useContext(ShortenContext);
+    const {shortenedLinks,copied,setShortenedLinks }=useContext(ShortenContext);
+
+    
+
 
 
 
@@ -28,7 +31,14 @@ const Statistics = () => {
              rel="noopener noreferrer">
                {link.shortenedLink} </a>
               <button 
-              className='rounded-[8px]  px-[35px] bg-[var(--Cyan)] font-bold text-[var(--Off-white)]'>Copy</button>
+              onClick={()=>{
+                const updatedLinks = [...shortenedLinks];
+                updatedLinks[index].copied = true;
+                setShortenedLinks(updatedLinks);
+              }}
+              className={`rounded-[8px]   ${link.copied?'bg-[var(--Dark-Violet)] px-[21px]':'bg-[var(--Cyan)] px-[35px]'} font-bold text-[var(--Off-white)]`}>
+                
+                {link.copied?'Copied!':'Copy'}</button>
 
 
               </div>

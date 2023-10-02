@@ -1,4 +1,8 @@
 import React from 'react'
+import {RiFacebookBoxFill} from 'react-icons/ri'
+import {FaTwitter} from 'react-icons/fa'
+import {BsPinterest} from 'react-icons/bs'
+import {RiInstagramLine} from 'react-icons/ri'
 import FacebookIcon from '../../assets/icon-facebook.svg'
 import iconTwitter from '../../assets/icon-twitter.svg'
 import iconPinterest from '../../assets/icon-pinterest.svg'
@@ -12,7 +16,7 @@ const Footer = () => {
             <div className='flex'>
           
           
-                <div className='grid grid-cols-3 w-[535px] font-medium text-[var(--Gray)] text-start' >
+                <div className='footer grid grid-cols-3 w-[535px] font-medium text-[var(--Gray)] text-start' >
                     <ul className='flex flex-col justify-between h-[140px]'><h2 className='mb-4'>Features</h2>
                         <li><p>Link Shortening</p></li>
                         <li><p>Branded Links</p></li>
@@ -32,11 +36,30 @@ const Footer = () => {
 
                 </div>
                 <ul
-            className='h-[min-content] flex w-[12rem] justify-between items-center'>
-                <li><img src={FacebookIcon} alt="" /></li>
-                <li><img src={iconTwitter} alt="" /></li>
-                <li><img src={iconPinterest} alt="" /></li>
-                <li><img src={iconInstagram} alt="" /></li>
+            className='icons  h-[min-content] flex w-[12rem] justify-between items-center'>
+                <li>
+                    <a href="">
+                        <RiFacebookBoxFill className='h-[35px] w-[35px]  '/>
+                    </a>
+                 </li>
+
+                <li>
+                <a href="">
+                        <FaTwitter className='h-[30px] w-[30px]  ' />
+                    </a>
+                </li>
+
+                <li>
+                <a href="">
+                        <BsPinterest className='h-[28px] w-[28px]  '/>
+                    </a>
+                </li>
+
+                <li>
+                <a href="">
+                        <RiInstagramLine className='h-[32px] w-[32px]  '/>
+                    </a>
+                </li>
                
             </ul>
             </div>
