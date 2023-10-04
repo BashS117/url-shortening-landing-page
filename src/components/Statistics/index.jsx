@@ -51,7 +51,7 @@ const Statistics = () => {
         <p className='px-[280px] text-[1.2rem] text-[var(--Grayish-Violet)] leading-9'>Track how your links are performing across the web with our 
   advanced statistics dashboard.</p>
 
-          <div className="relative grid justify-center items-center text-start grid-cols-3 mt-[10px] gap-[25px]">
+          <div className="relative grid justify-center items-center text-start grid-cols-3 mt-[10px] gap-[25px] sm:flex sm:flex-col">
           <hr className="bg-[var(--Cyan)] h-3 w-full absolute mt-[30px]" />
               <div className="relative pt-16 pb-[25px] rounded  shadow-lg  bg-[var(--Off-white)]">
                   <div className="px-6 py-4">

@@ -9,10 +9,10 @@ const BoostLinks = () => {
 
     <div className='z-10 w-[100%] flex flex-col items-center'>
 
-<h1 className='mb-[40px] text-[2.3rem] text-[var(--Off-white)] px-[100px]'>Boost your links today</h1>
+<h1 className='mb-[40px] text-[2.3rem] text-[var(--Off-white)] px-[100px] sm:p-0 sm:text-[1.6rem]'>Boost your links today</h1>
 
 <div className='bg-[var(--Off-white)] rounded-[25px]'>
-<button className='rounded-[25px]  px-[45px] bg-[var(--Cyan)] font-bold text-[var(--Off-white)]'>Get Started</button>
+<button className='rounded-[25px]  px-[45px] bg-[var(--Cyan)] font-bold text-[var(--Off-white)] sm:px-[35px]'>Get Started</button>
 
 </div>
 
