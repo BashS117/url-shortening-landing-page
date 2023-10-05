@@ -48,7 +48,7 @@ const Statistics = () => {
         <h1 className=" mt-[40px] mb-[5px] text-center text-2xl font-bold py-4 text-[2.5rem]">
         Advanced Statistics
         </h1>
-        <p className='px-[280px] text-[1.2rem] text-[var(--Grayish-Violet)] leading-9'>Track how your links are performing across the web with our 
+        <p className='px-[280px] sm:px-4 text-[1.2rem] text-[var(--Grayish-Violet)] leading-9'>Track how your links are performing across the web with our 
   advanced statistics dashboard.</p>
 
           <div className="relative grid justify-center items-center text-start grid-cols-3 mt-[10px] gap-[25px] sm:flex sm:flex-col">
