@@ -7,7 +7,7 @@ import Statistics from '../../components/Statistics'
 const Home = () => {
   return (<>
   
-  <main className='App  text-center w-full '>
+  <main className='App  text-center w-full mt-[180px] sm:mt-[100px] '>
     <Presentation/>
     <Statistics/>
     <BoostLinks/>

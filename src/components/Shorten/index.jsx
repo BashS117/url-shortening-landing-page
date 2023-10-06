@@ -1,5 +1,8 @@
 import React, {useContext, useState} from 'react'
-import bgFormImage from '../../assets/bg-shorten-desktop.svg'
+import bgFormImageDesktop from '../../assets/bg-shorten-desktop.svg'
+import bgFormImageMobile from '../../assets/bg-shorten-mobile.svg';
+
+
 import { ShortenContext } from '../../context';
 
 const Shorten = () => {
@@ -30,30 +33,37 @@ const handleShortenClick=()=>{
 }
 
   return (
-    <div className='z-10 p-[50px] py-[60px] overflow-hidden rounded-[8px] bg-[var(--Dark-Violet)] relative top-[-80px] flex flex-center justify-center'>
-            <img src={bgFormImage} alt="" className='absolute top-0 left-0 w-full h-full'/>
+    <div className='z-10 p-[50px] py-[60px] overflow-hidden rounded-[8px] bg-[var(--Dark-Violet)] relative top-[-80px] flex flex-center justify-center sm:p-[22px] '>
+           
+           
+           {/* Mostrar imagen para Desktop */}
+      <img src={bgFormImageDesktop} alt="" className='block sm:hidden absolute top-0 left-0 w-full h-full' />
 
-            <div className='z-10 w-[100%] flex justify-around '>
-            {isInputEmpty && <div className="text-red-500 absolute left-[60px] top-[124px]">Please add a link</div>} {/* Mostrar mensaje de error si hay error */}
+{/* Mostrar imagen para mobile */}
+<div><img src={bgFormImageMobile} alt="" className='hidden sm:block absolute top-0 left-0 w-full h-full sm:pr-[100px] sm:h-[77%] sm:left-[100px]' />
+</div>
 
-       
-              <input 
-              id="linkToShorten"
-              className={`rounded-[8px] pl-8 w-[75%] py-[16px] ${isInputEmpty ? 'placeholder-red-500 border-2 border-red-400' : ''}`} 
-              type="text" 
-              placeholder='Shorten a link here...' 
-              value={linkToShorten}
-              onChange={handleLinkChange}
-              />
-     
-     <div className='bg-[var(--Off-white)] rounded-[8px]'>
-     <button 
-               onClick={handleShortenClick}
-              className='button-container rounded-[8px] h-[100%] px-[35px] bg-[var(--Cyan)] font-bold text-[var(--Off-white)]'>Shorten It!</button>
+      <div className='z-10 w-[100%] flex justify-around sm:flex-col sm:justify-between sm:h-[auto]'>
+      
+        <input
+          id="linkToShorten"
+          className={`rounded-[8px] pl-8 w-[75%] py-[16px] sm:mb-[10px] sm:pl-4 ${isInputEmpty ? 'placeholder-red-500 border-2 border-red-400 sm:mb-0' : ''} sm:w-auto sm:py-[12px] sm:text-[1rem]`}
+          type="text"
+          placeholder='Shorten a link here...'
+          value={linkToShorten}
+          onChange={handleLinkChange}
+        />
+  {isInputEmpty && <div className="text-red-500 absolute left-[70px] top-[124px] sm:flex sm:left-0 sm:top-0 sm:relative sm:text-[0.8rem] sm:mt-1 sm:mb-3">Please add a link</div>} {/* Mostrar mensaje de error si hay error */}
 
-     </div>
-            
-            </div>        
+
+        <div className='bg-[var(--Off-white)] rounded-[8px]'>
+          <button
+            onClick={handleShortenClick}
+            className='button-container rounded-[8px] h-[100%] px-[35px] bg-[var(--Cyan)] font-bold text-[var(--Off-white)] sm:w-full'>Shorten It!</button>
+
+        </div>
+
+      </div>        
             
     </div>
   )

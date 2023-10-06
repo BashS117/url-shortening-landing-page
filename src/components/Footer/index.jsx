@@ -3,10 +3,7 @@ import { RiFacebookBoxFill } from 'react-icons/ri'
 import { FaTwitter } from 'react-icons/fa'
 import { BsPinterest } from 'react-icons/bs'
 import { RiInstagramLine } from 'react-icons/ri'
-import FacebookIcon from '../../assets/icon-facebook.svg'
-import iconTwitter from '../../assets/icon-twitter.svg'
-import iconPinterest from '../../assets/icon-pinterest.svg'
-import iconInstagram from '../../assets/icon-instagram.svg'
+
 const Footer = () => {
     return (
 
