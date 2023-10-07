@@ -79,14 +79,16 @@ button:hover {
 
 
 @media screen and (min-width: 375px) and (max-width: 767px) {
-  .menu-mobile {
-    
+  .menu-mobile a {
     color: var(--Off-white);
+    font-size: 1.2rem;
     /* La media query se aplica para 
        resoluciones entre 400px y 1000px */
   }
+  .menu-mobile button{
+    font-size: 1.2rem;
+  }
 }
-
 
 /* 
 button:focus-visible {
