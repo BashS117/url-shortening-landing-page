@@ -21,18 +21,18 @@ onClick={()=>{setMenuOpen(true)}}
 </button>
 
 
-        <div className={` sm:items-center justify-between w-full  ml-[50px] sm:ml-0 sm:flex-col sm:w-[89.4%] sm:absolute sm:top-[85px] sm:left-[20px] sm:bg-[var(--Dark-Violet)] ${menuOpen?"flex":"hidden"}`}>
-             <ul className='sm:flex-col  flex w-[18rem] justify-between items-center'>
+        <div className={`menu-mobile sm:rounded-[8px] sm:px-[20px] sm:py-[40px] sm:items-center justify-between w-full  ml-[50px] sm:ml-0 sm:flex-col sm:w-[89.4%] sm:absolute sm:top-[85px] sm:left-[20px] sm:bg-[var(--Dark-Violet)] ${menuOpen?"flex":"hidden"}`}>
+             <ul className='sm:h-[150px] sm:mb-[30px] sm:flex-col  flex w-[18rem] justify-between items-center'>
                 
-                <li><a className='text-red' href="">Features</a></li>
+                <li><a  href="">Features</a></li>
                 <li><a href="">Pricing</a></li>
                 <li><a href="">Resources</a></li>
             </ul> 
 
             <ul
-            className='sm:flex-col flex w-[12rem] justify-between items-center'>
-                <li><a href="">Login</a></li>
-                <button className='rounded-[22px] px-[25px] bg-[var(--Cyan)] font-bold text-[var(--Off-white)]'>Sign Up</button>
+            className='sm:pt-6 sm:w-full sm:border-t-[1px] sm:border-[var(--Grayish-Violet)] sm:flex-col flex w-[12rem] justify-between items-center'>
+                <li className='mb-[30px]'><a href="">Login</a></li>
+                <button className='sm:w-full rounded-[22px] px-[25px] bg-[var(--Cyan)] font-bold text-[var(--Off-white)]'>Sign Up</button>
             </ul>
 
         </div>

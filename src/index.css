@@ -78,6 +78,16 @@ button:hover {
 }
 
 
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .menu-mobile {
+    
+    color: var(--Off-white);
+    /* La media query se aplica para 
+       resoluciones entre 400px y 1000px */
+  }
+}
+
+
 /* 
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -102,3 +112,4 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
