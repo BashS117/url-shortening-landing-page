@@ -17,11 +17,11 @@ console.log(menuOpen)
 <button
 onClick={()=>{setMenuOpen(true)}}
  className={`button-menu-mobile bg-[var(--Off-white)] p-0  `}>
-    <FcMenu  className='h-9 w-9'/>
+    <FcMenu  className='hidden sm:block h-9 w-9'/>
 </button>
 
 
-        <div className={` sm:rounded-[8px] sm:px-[20px] sm:py-[40px] sm:items-center justify-between w-full  ml-[50px] sm:ml-0 sm:flex-col sm:w-[89.4%] sm:absolute sm:top-[85px] sm:left-[20px] sm:bg-[var(--Dark-Violet)] ${menuOpen?"flex":"hidden"}`}>
+        <div className={` sm:rounded-[8px] sm:px-[20px] sm:py-[40px] sm:items-center justify-between w-full  ml-[50px] sm:ml-0 sm:flex-col sm:w-[89.4%] sm:absolute sm:top-[85px] sm:left-[20px] sm:bg-[var(--Dark-Violet)] flex ${menuOpen?"flex":"sm:hidden"}`}>
              <ul className='sm:h-[150px] sm:mb-[30px] sm:flex-col  flex w-[18rem] justify-between items-center'>
                 
                 <li><a  href="">Features</a></li>
@@ -31,7 +31,7 @@ onClick={()=>{setMenuOpen(true)}}
 
             <ul
             className='sm:pt-6 sm:w-full sm:border-t-[1px] sm:border-violet-200 sm:flex-col flex w-[12rem] justify-between items-center'>
-                <li className='mb-[30px]'><a href="">Login</a></li>
+                <li className='sm:mb-[30px]'><a href="">Login</a></li>
                 <button className='sm:w-full rounded-[22px] px-[25px] bg-[var(--Cyan)] font-bold text-[var(--Off-white)]'>Sign Up</button>
             </ul>
 

@@ -25,7 +25,7 @@ const Statistics = () => {
           <div key={index} className=" flex justify-between items-center mb-[10px] relative top-[-55px] bg-[var(--Off-white)] rounded-[4px] px-[20px] py-[0px]  text-[1.3rem] sm:px-0 sm:flex-col sm:text-[0.9rem] sm:text-start ">
            <p className='sm:px-[15px] text-[var(---Very-Dark-Violet)] sm:mt-[15px]'>
             {link.originalLink} </p>
-        <div className='sm:pt-[10px] sm:border-t sm:px-[15px] sm:mb-[15px] sm:border-[var(--Gray)]'>
+        <div className='sm:pt-[10px] sm:border-t sm:px-[15px] sm:mb-[15px] sm:border-[var(--Gray)] my-[10px]'>
           <a className='mr-[20px] text-[var(--Cyan)] '
             href={link.shortenedLink}
             target="_blank"
@@ -37,7 +37,7 @@ const Statistics = () => {
               updatedLinks[index].copied = true;
               setShortenedLinks(updatedLinks);
             }}
-            className={`rounded-[8px]   ${link.copied ? 'bg-[var(--Dark-Violet)] px-[21px]' : 'bg-[var(--Cyan)] px-[35px]'} font-bold text-[var(--Off-white)] sm:w-full sm:mt-[10px]`}>
+            className={`rounded-[8px]   ${link.copied ? 'bg-[var(--Dark-Violet)] px-[21px]' : 'bg-[var(--Cyan)] px-[35px]'} font-bold text-[var(--Off-white)] sm:w-full sm:mt-[10px] `}>
 
             {link.copied ? 'Copied!' : 'Copy'}</button>
 
